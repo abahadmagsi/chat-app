@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Chat-App</title>
+    <link rel="stylesheet" href="chat_app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAgTxhdKp9mjukthLQXdzUSSHjoxyPtHuw",
+          authDomain: "thenetworkchapter-7ef42.firebaseapp.com",
+          databaseURL: "https://thenetworkchapter-7ef42.firebaseio.com",
+          projectId: "thenetworkchapter-7ef42",
+          storageBucket: "thenetworkchapter-7ef42.appspot.com",
+          messagingSenderId: "855560980079",
+          appId: "1:855560980079:web:becaaa01577b6ba63fef9a",
+          measurementId: "G-MPNWWJY8VC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Ahad's Chat-App</span>
+  <form class="form-inline mr-50%%">
+  <input class="form-control mr-sm-2" type="text" placeholder="Search by email" aria-label="Search">
+  <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit">Search</button>
+</form>
+</nav>
+<div class="left">
+<h1>You</h1>
+    <ul id="txtBox">
+
+    </ul>
+    <div class="input-group mb-1">
+  <input type="text" class="form-control" id="msgtxt" placeholder="Type..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" onclick="sendButton()" type="button">Send</button>
+  </div>
+</div>
+</div>
+
+
+
+<div class="right">
+<h1>Other</h1>
+<ul id="msgBoxR">
+
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="chat_app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

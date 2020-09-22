@@ -1,0 +1,27 @@
+.left{
+    width: 40%;
+    display: inline-block;
+}
+h1{
+    border: 2px dashed black;
+}
+.right{
+    border-left: 5px solid grey;
+    display: inline-block;
+    width: 40%;
+    margin-top: -10px;
+}
+.right ul li{
+    list-style: none;
+    /* margin-left: 40%; */
+}
+.input-group{
+    margin-bottom: 50px !important; 
+}
+li{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
